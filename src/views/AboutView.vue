@@ -11,21 +11,43 @@
     <Spinner v-else/>
     </div>
   </div>
+  <div skill>
+        <div class="row">
+            <h2 class="display-2" data-aos="zoom-in-down">Skills</h2>
+        </div>
+        <div class="row gap-2 justify-content-center" v-if="skills?.length" skills>
+            <div v-for="skill in skills" :key="skill.id" data-aos="fade-up">
+                <div id="iconss">
+                    <box-icon type='logo' :name='skill.name' :color="skill.color" id="icon"></box-icon>
+                </div>
+                    <h4 class="card-title">{{ skill.language }}</h4>
+                    <p class="lead">{{ skill.level }}</p>
+            </div>
+        </div>
+        <Spinner v-else />
+    </div>
 </template>
 
-<script setup>
+<script >
 import Spinner from '@/components/Spinner.vue';
-import {computed, onMounted } from 'vue'
-import {useStore} from 'vuex'
 
-const store = useStore()
-    const about = 
-    computed(() => store.state.about)
-
-
-    onMounted(() => {
-        store.dispatch('fetchAbout')
-    })
+export default {
+  components: {
+      Spinner
+  },
+  computed: {
+    about() {
+      return this.$store.state.about
+    },
+    skills() {
+        return this.$store.state.skills
+    }
+  },
+  mounted() {
+    this.$store.dispatch('fetchAbout')
+    this.$store.dispatch('fetchSkills')
+  }
+}
 </script>
 <style scoped>
 #info {
