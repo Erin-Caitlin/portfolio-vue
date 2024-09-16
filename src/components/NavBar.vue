@@ -60,50 +60,18 @@
   h1 {
     font-size: 24px;
   }
-  
-  .navbar .dropdown-menu {
-    background-color: #532823b4;
-    border: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .navbar .dropdown-item {
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-  
-  .navbar .dropdown-item:hover {
-    background-color: #422020;
-  }
-  
-  .navbar .dropdown-toggle::after {
-    display: none;
-  }
-  
-  .navbar .nav-item.dropdown {
-    position: relative;
-  }
-  
-  .navbar .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-  
-  .navbar-nav .nav-link {
+.nav-link {
     position: relative;
     padding-bottom: 5px;
     color: #fff; 
     text-decoration: none;
   }
   
-  .navbar-nav .nav-link:hover {
+.nav-link:hover {
     color: #f8f9fa; 
   }
   
-  .navbar-nav .nav-link::after {
+.nav-link::after {
     content: '';
     display: block;
     position: absolute;
@@ -116,15 +84,15 @@
     transition: transform 0.3s ease;
   }
   
-  .navbar-nav .nav-link:hover::after {
+.nav-link:hover::after {
     transform: scaleX(1);
   }
   
-  .navbar-nav .nav-link.active {
+.nav-link.active {
     color: #f8f9fa; 
   }
   
-  .navbar-nav .nav-link.active::after {
+.nav-link.active::after {
     transform: scaleX(1);
     background-color: #f8f9fa; 
   }

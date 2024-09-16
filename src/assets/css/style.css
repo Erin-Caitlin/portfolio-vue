@@ -4,6 +4,16 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -12,7 +22,12 @@
   text-align: center;
   text-align: center;
   color: #532823;
-  background-color:#E0B28E;
+  /* background-color:#E0B28E; */
+  overflow: hidden;
+  background: rgb(177, 148, 148) url(https://erin-caitlin.github.io/all-images/portfolio/Background-picture.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
 }
 
 
@@ -66,6 +81,16 @@ text-align: center;
   color: #000;
 }
 
+
+/* All images */
+img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+/* Media Queries */
 @media (max-width: 991.98px) {
 .navbar-title {
   margin-bottom: 15px;
