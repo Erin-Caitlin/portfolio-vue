@@ -3,6 +3,7 @@
         <div class="card-header">
             <slot name="cardHeader"></slot>
         </div>
+
         <div class="card-body">
             <slot name="cardBody"></slot>
         </div>
@@ -10,18 +11,20 @@
 </template>
 
 <script>
-export default {
-    name: "CardComp"
+    export default {
+       name: 'CardComp', 
+       
 }
 </script>
 
 <style scoped>
+
 .card {
-    background-color: transparent;
-    border: none;
-    width: 15rem;
+    margin: 1rem;
+    width: 20rem;
 }
-.card-header {
-    background-color: none;
+.carousel-item .card-body{
+    height: 200px; 
+    overflow-y: auto;
 }
 </style>

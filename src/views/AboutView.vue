@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="aboutSection">
-    <h2 class="display-2 text-white" data-aos="zoom-in-down">About</h2>
+    <h2 class="display-2 text-white">About</h2>
     <div id="info">
         <div v-if="about" about>             
             <p class="lead">{{ about[0].information[0] }}</p> 

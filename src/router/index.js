@@ -10,7 +10,22 @@ const routes = [
     path: '/about',
     name: 'about',
     component: () => import('../views/AboutView.vue')
-  }
+  },
+  {
+    path: '/education-experience',
+    name: 'education-experience',
+    component: () => import('../views/Education&ExperienceView.vue')
+  },
+  // {
+  //   path: '/projects',
+  //   name: 'projects',
+  //   component: () => import('../views/ProjectsView.vue')
+  // },
+  // {
+  //   path: '/contact',
+  //   name: 'contact',
+  //   component: () => import('../views/ContactView.vue')
+  // }
 ]
 
 const router = createRouter({

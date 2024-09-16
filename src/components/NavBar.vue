@@ -12,7 +12,6 @@
             <li class="nav-item"><router-link class="nav-link" to="/" @click="handleLinkClick">Home</router-link></li>
             <li class="nav-item"><router-link class="nav-link" to="/about" @click="handleLinkClick">About</router-link></li>
             <li class="nav-item"><router-link class="nav-link" to="/education-experience" @click="handleLinkClick">Education & Experience</router-link></li>
-            <li class="nav-item"><router-link class="nav-link" to="/skills" @click="handleLinkClick">Skills</router-link></li>
             <li class="nav-item"><router-link class="nav-link" to="/projects" @click="handleLinkClick">Projects</router-link></li>
             <li class="nav-item"><router-link class="nav-link" to="/contact" @click="handleLinkClick">Contact</router-link></li>
           </ul>
