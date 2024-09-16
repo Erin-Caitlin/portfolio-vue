@@ -19,24 +19,20 @@ export default {
   align-items: center;
   height: 100vh;
 }
-
 .dot {
   width: 12px;
   height: 12px;
   margin: 0 5px;
-  background-color: #fff; 
+  background-color: #fff;
   border-radius: 50%;
   animation: bounce 1.4s infinite;
 }
-
 .dot:nth-child(2) {
   animation-delay: 0.2s;
 }
-
 .dot:nth-child(3) {
   animation-delay: 0.4s;
 }
-
 @keyframes bounce {
   0%, 100% {
     transform: scale(1);
