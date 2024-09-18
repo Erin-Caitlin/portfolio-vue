@@ -9,56 +9,68 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" :class="{ show: isNavbarVisible }" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><router-link class="nav-link" to="/" @click="handleLinkClick">Home</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/about" @click="handleLinkClick">About</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/education-experience" @click="handleLinkClick">Education & Experience</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/projects" @click="handleLinkClick">Projects</router-link></li>
-          <li class="nav-item"><router-link class="nav-link" to="/contact" @click="handleLinkClick">Contact</router-link></li>
+          <li class="nav-item"><a class="nav-link" href="#landing" @click="handleLinkClick">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" @click="handleLinkClick">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#edu/exp" @click="handleLinkClick">Education & Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" @click="handleLinkClick">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" @click="handleLinkClick">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
 
-<script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue';
+<script>
+export default {
+  data() {
+    return {
+      isNavbarVisible: false,
+    };
+  },
+  methods: {
+    toggleNavbar() {
+      this.isNavbarVisible = !this.isNavbarVisible;
+    },
+    handleLinkClick(event) {
+      if (window.innerWidth <= 991) {
+        this.isNavbarVisible = false;
+      }
+      const target = event.currentTarget.getAttribute('href');
 
-const isNavbarVisible = ref(false);
+      // Use Vue Router's router.push to handle hash navigation
+      this.$router.push({ hash: target });
 
-function toggleNavbar() {
-  isNavbarVisible.value = !isNavbarVisible.value;
-}
-
-function handleLinkClick() {
-  if (window.innerWidth <= 991) {
-    isNavbarVisible.value = false;
-  }
-}
-
-function handleResize() {
-  if (window.innerWidth > 991) {
-    isNavbarVisible.value = false;
-  }
-}
-
-function handleScroll() {
-  const navbar = document.querySelector('.navbar');
-  if (window.scrollY > 40) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-}
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll);
-  window.addEventListener('resize', handleResize);
-});
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll);
-  window.removeEventListener('resize', handleResize);
-});
+      this.smoothScroll(target);
+    },
+    smoothScroll(target) {
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    handleResize() {
+      if (window.innerWidth > 991) {
+        this.isNavbarVisible = false;
+      }
+    },
+    handleScroll() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('resize', this.handleResize);
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('resize', this.handleResize);
+  },
+};
 </script>
 
 <style scoped>

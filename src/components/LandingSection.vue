@@ -40,10 +40,21 @@
 #links {
   margin: 1rem;
 }
-h1, h2, h3,h4, h6{
+
+h1, h2, h3, h4, h6 {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
   filter: drop-shadow(0.1rem 0.1rem 0.1rem black);
   text-decoration-color: #6642428a;
+}
+
+img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container-fluid {
+  padding: 0px !important;
 }
 </style>
