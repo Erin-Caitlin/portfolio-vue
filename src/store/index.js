@@ -74,15 +74,16 @@ export default createStore({
     },
     async fetchSkills(context) {
       try {
-        let {skills} = await (await axios.get(portfolioURL)).data
-        context.commit("setSkills", skills)
+        const response = await axios.get(portfolioURL);
+        context.commit("setSkills", response.data.skills);
       } catch (e) {
-        Swal.fire ({
+        console.error("Failed to fetch skills:", e);
+        Swal.fire({
           title: "Error",
-          text: "Failed to fetch data - skilss",
+          text: "Failed to fetch data - skills",
           icon: "error",
           timer: 2000
-        })
+        });
       }
     },
     async fetchProjects(context) {

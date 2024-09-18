@@ -3,7 +3,7 @@
         <div class="row">
             <h2 class="display-2">Education & Experiences</h2>
         </div>
-        <div class="row gap-2 justify-content-center" v-if="education?.length" data-aos="fade-up" data-aos-duration="2000">
+        <div class="row gap-2 justify-content-center" v-if="education?.length" data-bs-aos="fade-up" data-bs-aos-duration="2000">
             <Card v-for="education in education" :key="education.id" cards>
                 <template #cardHeader>
                     <h4 class="card-title">{{ education.school }}</h4>
@@ -14,8 +14,8 @@
                 </template>
             </Card>
         </div>
-        <div class="row gap-2 justify-content-center" v-if="experiences?.length" data-aos="fade-up"
-        data-aos-duration="2000">
+        <div class="row gap-2 justify-content-center" v-if="experiences?.length" data-bs-aos="fade-up"
+        data-bs-aos-duration="2000">
             <Card v-for="experiences in experiences" :key="experiences.id" cards>
                 <template #cardHeader>
                     <h4 class="card-title">{{ experiences.company }}</h4>
