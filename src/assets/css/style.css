@@ -2,10 +2,8 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* Google font */
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *,
 ::after,
@@ -21,7 +19,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   text-align: center;
-  color: #532823;
+  color: black;
   /* background-color:#E0B28E; */
   overflow: hidden;
   background: rgb(177, 148, 148) url(https://erin-caitlin.github.io/all-images/portfolio/Background-picture.jpg) no-repeat center;
@@ -58,7 +56,9 @@ color: #fff;
 
 .navbar-title {
 margin-bottom: 10px;
-font-family: "Sacramento", cursive;
+font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
 color: #fff;
 text-align: center;
 margin: 0;

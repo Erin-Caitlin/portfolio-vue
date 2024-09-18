@@ -1,5 +1,5 @@
 <template>
-    <div class="container" resume-page>
+    <div class="container">
         <div class="row">
             <h2 class="display-2">Education & Experiences</h2>
         </div>
@@ -55,10 +55,6 @@ export default {
 </script>
 
 <style scoped>
-/* [resume] {
-    display: flex;
-} */
-
 [cards] {
     box-shadow: 0 0.5rem 1rem rosybrown;
     background-color: rgb(208, 188, 177);
