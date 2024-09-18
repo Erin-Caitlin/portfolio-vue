@@ -1,11 +1,11 @@
 <template>
     <div class="container">
       <div class="row">
-        <h2 class="display-2" data-aos="zoom-in-down">Projects</h2>
+        <h2 class="display-2" data-bs-aos="zoom-in-down">Projects</h2>
       </div>
-      <div class="row" data-aos="zoom-in-down" resume>
+      <div class="row" data-bs-aos="zoom-in-down" resume>
         <div class="row gap-2 justify-content-center" v-if="projects.length">
-          <Card v-for="project in projects" :key="project.id" data-aos="fade-up">
+          <Card v-for="project in projects" :key="project.id" data-bs-aos="fade-up">
             <template #cardHeader>
               <h6>{{ project.project }}</h6>
               <img :src="project.imgUrl" :alt="project.project" loading="lazy" class="img-fluid">
