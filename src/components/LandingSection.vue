@@ -8,7 +8,7 @@
       </div>
       <div class="col">
         <div class="animate__animated animate__fadeInTopLeft" id="details">
-          <h2 class="display-2">Erin Caitlin Williams</h2>
+          <h1 class="display-1">Erin Caitlin Williams</h1>
           <h4 class="display-4">Aspiring Developer</h4>
         </div>
         <div id="links">
@@ -56,5 +56,8 @@ img {
 
 .container-fluid {
   padding: 0px !important;
+  margin-top: 4rem;
 }
+
+
 </style>

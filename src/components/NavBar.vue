@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid d-flex flex-column align-items-center">
       <div class="navbar-title d-flex justify-content-center align-items-center w-100">
-        <h1>Erin Caitlin Williams</h1>
+        <h1 class="display-1">Erin Caitlin Williams</h1>
       </div>
       <button class="navbar-toggler" type="button" @click="toggleNavbar" aria-controls="navbarSupportedContent" aria-expanded="isNavbarVisible" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,6 @@ export default {
       }
       const target = event.currentTarget.getAttribute('href');
 
-      // Use Vue Router's router.push to handle hash navigation
       this.$router.push({ hash: target });
 
       this.smoothScroll(target);
@@ -77,6 +76,12 @@ export default {
 h1 {
   font-size: 24px;
 }
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
 .nav-link {
   position: relative;
   padding-bottom: 5px;

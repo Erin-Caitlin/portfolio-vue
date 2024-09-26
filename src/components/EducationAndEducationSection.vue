@@ -1,18 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <h2 class="display-2">Education & Experiences</h2>
-        </div>
-        <div class="row gap-2 justify-content-center" v-if="education?.length" data-bs-aos="fade-up" data-bs-aos-duration="2000">
-            <Card v-for="education in education" :key="education.id" cards>
-                <template #cardHeader>
-                    <h4 class="card-title">{{ education.school }}</h4>
-                </template>
-                <template #cardBody>
-                    <img :src="education.img_url" :alt="education.school" loading="lazy" class="img-fluid">
-                    <p class="lead">{{ education.description }}</p>
-                </template>
-            </Card>
+            <h2 class="display-2 section-title">Education & Experiences</h2>
         </div>
         <div class="row gap-2 justify-content-center" v-if="experiences?.length" data-bs-aos="fade-up"
         data-bs-aos-duration="2000">
@@ -40,15 +29,11 @@ export default {
         Spinner
     },
     computed: {
-        education() {
-            return this.$store.state.education
-        },
         experiences() {
             return this.$store.state.experiences
         }
     },
     mounted() {
-        this.$store.dispatch('fetchEducation')
         this.$store.dispatch('fetchExperiences')
     }
 }

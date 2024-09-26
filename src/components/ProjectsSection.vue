@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <h2 class="display-2" data-bs-aos="zoom-in-down">Projects</h2>
+      <h2 class="display-2 section-title" data-bs-aos="zoom-in-down">Projects</h2>
     </div>
     <div class="row" data-bs-aos="zoom-in-down" resume>
       <div class="row gap-2 justify-content-center" v-if="projects.length">
@@ -14,8 +14,8 @@
             <a class="m-2" :href="project.Github" target="_blank">
               <button class="btn btn-danger pro-link" btn2>Github</button>
             </a>
-            <a class="m-2" :href="project.Vercel" target="_blank">
-              <button class="btn btn-danger pro-link" btn2>Vercel</button>
+            <a class="m-2" :href="project.Hosted" target="_blank">
+              <button class="btn btn-danger pro-link" btn2>Hosted</button>
             </a>
           </template>
         </Card>
