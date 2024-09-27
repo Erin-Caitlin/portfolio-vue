@@ -33,14 +33,13 @@ transition: background-color 0.3s ease;
 background-color: transparent;
 }
 
-
 .navbar.scrolled {
-background-color: #532823b4;
+background-color: #532823e3;
 }
 
-.navbar-right {
+/* .navbar-right {
 margin-left: auto;
-}
+} */
 
 
 nav a {
@@ -90,8 +89,6 @@ img {
 h2, h3, h4, h6 {
   font-family: "Italiana", sans-serif;
   font-weight: 400;
-  /* filter: drop-shadow(0.1rem 0.1rem 0.1rem black); */
-  /* text-decoration-color: #6642428a; */
 }
 
 /* Background */

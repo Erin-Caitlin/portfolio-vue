@@ -95,7 +95,7 @@ export default {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(25% - 20px);
+  flex: 1 1 calc(33.33% - 20px); /* Changed to 3 items per row */
   margin: 10px;
   max-width: 150px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
