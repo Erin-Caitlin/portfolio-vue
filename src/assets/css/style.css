@@ -108,6 +108,13 @@ h2, h3, h4, h6 {
   text-transform: uppercase;
 }
 
+.animate__animated.animate__fadeInTopLeft {
+  --animate-duration: 2s;
+}
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
 
 /* Media Queries */
 @media (max-width: 991.98px) {
