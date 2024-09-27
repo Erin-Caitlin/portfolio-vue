@@ -6,7 +6,6 @@ import store from './store'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap'
 import 'boxicons'
-// import AOS from 'aos';
 import 'aos/dist/aos.css'
 // import 'animate.css';
 

@@ -6,7 +6,7 @@
       <section class="row" id="about">
         <AboutSection />
       </section>
-      <section class="row" id="edu/exp">
+      <section class="row" id="experience">
         <EducationAndEducationSection />
       </section>
       <section class="row" id="projects">

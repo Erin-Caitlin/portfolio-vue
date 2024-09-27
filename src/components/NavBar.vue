@@ -11,7 +11,7 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="#landing" @click="handleLinkClick">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about" @click="handleLinkClick">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#edu/exp" @click="handleLinkClick">Education & Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" @click="handleLinkClick">Education & Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects" @click="handleLinkClick">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact" @click="handleLinkClick">Contact</a></li>
         </ul>
@@ -120,7 +120,7 @@ h1 {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #532823b4;
+    background-color: #532823;
     transition: left 0.3s ease;
     z-index: 1050;
   }

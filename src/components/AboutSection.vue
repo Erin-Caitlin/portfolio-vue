@@ -11,9 +11,7 @@
       <Spinner v-else />
     </div>
 
-    <div class="row">
-      <h2 class="display-2 section-title" data-bs-aos="zoom-in-down">Skills</h2>
-    </div>
+    <h2 class="display-2 section-title" data-bs-aos="zoom-in-down">Skills</h2>
     <div class="row gap-2 justify-content-center" v-if="skills && skills.length">
       <div class="d-flex flex-wrap justify-content-center">
         <div v-for="skill in skills" :key="skill.id" data-bs-aos="fade-up" class="skill-item">
@@ -52,7 +50,6 @@ export default {
 </script>
 
 <style scoped>
-/* General Styling */
 .container {
   padding: 2rem;
   text-align: center;
@@ -66,7 +63,6 @@ export default {
   text-transform: uppercase;
 }
 
-/* About Section */
 #info {
   margin: 2rem auto;
   display: flex;
@@ -75,9 +71,9 @@ export default {
   align-items: center;
   gap: 1rem;
   width: 70%;
-  background-color: rgba(255, 255, 255, 0.137);
   padding: 1.5rem;
   border-radius: 10px;
+  background-color: #ffffff2f;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -87,7 +83,6 @@ export default {
   color: #333;
 }
 
-/* Skills Section */
 .row {
   display: flex;
   justify-content: center;
@@ -96,13 +91,13 @@ export default {
 
 .skill-item {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.11); /* Transparent background */
-  padding: 1.5rem; /* Smaller padding */
+  background-color: #ffffff2f;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 0 1 calc(20% - 20px); /* Five items per row */
-  margin: 10px; /* Space between items */
-  max-width: 150px; /* Set maximum width */
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  max-width: 150px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -112,23 +107,22 @@ export default {
 }
 
 .skill-icon {
-  width: 50px; /* Smaller icon size */
-  height: 50px; /* Smaller icon size */
-  margin-bottom: 0.5rem; /* Smaller margin */
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
 }
 
 .card-title {
-  font-size: 1.3rem; /* Smaller font size */
+  font-size: 1.5rem;
   color: #532823;
   margin-top: 0.5rem;
 }
 
 .lead {
-  font-size: 1rem; /* Smaller font size */
+  font-size: 1rem;
   color: #666;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .section-title {
     font-size: 2rem;
@@ -139,8 +133,17 @@ export default {
   }
 
   .skill-item {
-    flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
-    max-width: 120px; /* Adjust maximum width for smaller screens */
+    flex: 1 1 calc(50% - 20px);
+    max-width: 120px;
+  }
+
+  .skill-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
   }
 }
 </style>

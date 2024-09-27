@@ -1,7 +1,7 @@
 <template>
   <div class="container" id="contact-page">
     <h2 class="display-2 section-title">Contact</h2>
-    <div class="contact-content d-flex flex-column flex-md-row align-items-center justify-content-between p-4 rounded shadow">
+    <div class="contact-content d-flex flex-column flex-md-row align-items-center justify-content-center p-4 rounded shadow">
       <div class="contact-form me-md-4 mb-4 mb-md-0 col-12 col-md-6">
         <form action="https://formspree.io/f/mkgwnjva" method="POST">
           <div class="form-group mb-3">
@@ -27,22 +27,28 @@
         </form>
       </div>
 
-      <div class="contact-details col-12 col-md-5">
+      <div class="contact-details col-12 col-md-5 text-left">
         <div class="text-white">
-          <div class="d-flex gap-3 align-items-center mb-3">
+          <div class="d-flex gap-3 align-items-start mb-3">
             <i class="bi bi-phone"></i>
-            <h4>Contact number:</h4>
-            <p class="lead">066 267 3498</p>
+            <div>
+              <h4>Contact number:</h4>
+              <p class="lead">066 267 3498</p>
+            </div>
           </div>
-          <div class="d-flex gap-3 align-items-center mb-3">
+          <div class="d-flex gap-3 align-items-start mb-3">
             <i class="bi bi-envelope"></i>
-            <h4>Email:</h4>
-            <p class="lead">erinwilliamscat@gmail.com</p>
+            <div>
+              <h4>Email:</h4>
+              <p class="lead">erinwilliamscat@gmail.com</p>
+            </div>
           </div>
-          <div class="d-flex gap-3 align-items-center">
+          <div class="d-flex gap-3 align-items-start">
             <i class="bi bi-geo-alt"></i>
-            <h4>Location:</h4>
-            <p class="lead">Mitchells Plain, Cape Town</p>
+            <div>
+              <h4>Location:</h4>
+              <p class="lead">Mitchells Plain, Cape Town</p>
+            </div>
           </div>
         </div>
       </div>
