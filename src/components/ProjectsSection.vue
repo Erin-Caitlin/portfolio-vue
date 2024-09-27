@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row text-center">
-      <h2 class="display-2 section-title">Projects</h2>
+      <h2 class="display-2 section-title animate__animated animate__fadeIn">Projects</h2>
     </div>
     <div class="project-grid" v-if="projects.length">
       <div class="project-card" v-for="project in projects" :key="project.id">

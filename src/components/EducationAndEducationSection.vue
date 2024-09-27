@@ -1,18 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <h2 class="display-2">Education & Experiences</h2>
-        </div>
-        <div class="row gap-2 justify-content-center" v-if="education?.length" data-bs-aos="fade-up" data-bs-aos-duration="2000">
-            <Card v-for="education in education" :key="education.id" cards>
-                <template #cardHeader>
-                    <h4 class="card-title">{{ education.school }}</h4>
-                </template>
-                <template #cardBody>
-                    <img :src="education.img_url" :alt="education.school" loading="lazy" class="img-fluid">
-                    <p class="lead">{{ education.description }}</p>
-                </template>
-            </Card>
+            <h2 class="display-2 animate__animated animate__fadeIn">Education & Experiences</h2>
         </div>
         <div class="row gap-2 justify-content-center" v-if="experiences?.length" data-bs-aos="fade-up"
         data-bs-aos-duration="2000">
@@ -55,6 +44,14 @@ export default {
 </script>
 
 <style scoped>
+.section-title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #532823;
+  text-transform: uppercase;
+}
+
 [cards] {
     box-shadow: 0 0.5rem 1rem rosybrown;
     background-color: rgb(208, 188, 177);

@@ -10,7 +10,6 @@ export default createStore({
     education: null,
     experiences: null,
     skills: null,
-    testimonials: null,
     projects:null
   },
   getters: {

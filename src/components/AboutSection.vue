@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2 class="display-2 section-title">About</h2>
+    <h2 class="display-2 section-title animate__animated animate__fadeIn">About</h2>
     <div id="info">
       <div v-if="about" about>
         <p class="lead">{{ about[0].information[0] }}</p>
@@ -11,8 +11,8 @@
       <Spinner v-else />
     </div>
 
-    <h2 class="display-2 section-title" data-bs-aos="zoom-in-down">Skills</h2>
-    <div class="row gap-2 justify-content-center" v-if="skills && skills.length">
+    <h2 class="display-2 section-title animate__animated animate__fadeIn">Skills</h2>
+    <div class="row gap-4 justify-content-center" v-if="skills && skills.length">
       <div class="d-flex flex-wrap justify-content-center">
         <div v-for="skill in skills" :key="skill.id" data-bs-aos="fade-up" class="skill-item">
           <div id="icons">

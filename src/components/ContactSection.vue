@@ -1,23 +1,23 @@
 <template>
   <div class="container" id="contact-page">
-    <h2 class="display-2 section-title">Contact</h2>
+    <h2 class="display-2 section-title animate__animated animate__fadeIn">Contact</h2>
     <div class="contact-content d-flex flex-column flex-md-row align-items-center justify-content-center p-4 rounded shadow">
       <div class="contact-form me-md-4 mb-4 mb-md-0 col-12 col-md-6">
         <form action="https://formspree.io/f/mkgwnjva" method="POST">
           <div class="form-group mb-3">
-            <label class="form-label text-white" for="name">First Name</label>
+            <label class="form-label text-white" for="name"></label>
             <input type="text" name="name" placeholder="First Name" id="name" class="form-control border-bottom">
           </div>
           <div class="form-group mb-3">
-            <label class="form-label text-white" for="lastname">Last Name</label>
+            <label class="form-label text-white" for="lastname"></label>
             <input type="text" name="lastname" placeholder="Last Name" id="lastname" class="form-control border-bottom">
           </div>
           <div class="form-group mb-3">
-            <label class="form-label text-white" for="email">Email</label>
+            <label class="form-label text-white" for="email"></label>
             <input type="email" name="email" placeholder="Email@gmail.com" id="email" class="form-control border-bottom">
           </div>
           <div class="form-group mb-4">
-            <label class="form-label text-white" for="message">Message</label>
+            <label class="form-label text-white" for="message"></label>
             <textarea name="message" placeholder="Type your message..." id="message" class="form-control border-bottom" rows="5"></textarea>
           </div>
           <div class="d-flex justify-content-center">
@@ -88,6 +88,10 @@
   background-color: #532823;
   border-color: #532823;
 }
+.btn-dark:hover {
+  background-color: #fff;
+  color: #532823;
+}
 
 .btn-outline-dark {
   background-color: white;
@@ -100,6 +104,10 @@
   color: #fff;
 }
 
+::placeholder {
+  color: #fff;
+}
+
 i {
   padding: .5rem;
   font-size: 1.5rem;
@@ -109,7 +117,10 @@ i {
 }
 
 .contact-details {
-  font-size: 1rem; 
+  font-size: 1rem;
+  display: flex;
+  justify-content: center; 
+  text-align: left;
 }
 
 .contact-details p {

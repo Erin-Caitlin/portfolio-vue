@@ -1,21 +1,15 @@
 <template>
   <div class="container-fluid p-0" landing>
-    <div class="row vh-100 align-items-center animate__animated animate__fadeInTopLeft" page>
-      <div class="col">
-        <div>
+    <div class="row vh-100 align-items-center" page>
+      <div class="col animate__animated animate__fadeInLeft">
           <img src="https://erin-caitlin.github.io/portfolio-images/VuePortfolio/image24.jpg" alt="profile" class="img-fluid w-75 shadow rounded-top" loading="lazy"> 
-        </div>
       </div>
-      <div class="col">
-        <div class="animate__animated animate__fadeInTopLeft" id="details">
+      <div class="col animate__animated animate__fadeInRight" id="details">
           <h1 class="display-1">Erin Caitlin Williams</h1>
           <h4 class="display-4">Aspiring Developer</h4>
-        </div>
-        <div id="links">
-          <router-link to="/about" class="m-2">
-            <button class="btn pro-link">ABOUT ME</button>
-          </router-link>
-        </div>
+          <div id="links">
+              <button class="btn"><a href="./AboutSection.vue">ABOUT ME</a></button>
+          </div>
       </div>
     </div>
   </div>
@@ -34,7 +28,10 @@
 }
 
 .btn {
-  background-color: rgba(245, 245, 220, 0.521);
+  background-color: rgba(247, 203, 233, 0.521);
+}
+.btn:hover {
+  background-color: #53282357;
 }
 
 #links {
@@ -48,6 +45,15 @@ h1, h4 {
   -color: #6642428a;
 }
 
+h1 {
+  font-size: 4.5rem
+}
+
+h4 {
+  font-size: 3rem;
+
+}
+
 img {
   aspect-ratio: 1;
   object-fit: cover;
@@ -59,5 +65,12 @@ img {
   margin-top: 4rem;
 }
 
+a {
+  text-decoration: none;
+  color: #532823;
 
+}
+a:hover {
+  color: #fff;
+}
 </style>
