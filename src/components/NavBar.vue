@@ -9,11 +9,11 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" :class="{ show: isNavbarVisible }" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="./LandingSection.vue" @click="handleLinkClick">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./AboutSection.vue" @click="handleLinkClick">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="./EducationAndEducationSection.vue" @click="handleLinkClick">Education & Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="./ProjectsSection.vue" @click="handleLinkClick">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="./ContactSection.vue" @click="handleLinkClick">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#landing" @click="handleLinkClick">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" @click="handleLinkClick">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" @click="handleLinkClick">Education & Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" @click="handleLinkClick">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" @click="handleLinkClick">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -32,13 +32,12 @@ export default {
       this.isNavbarVisible = !this.isNavbarVisible;
     },
     handleLinkClick(event) {
+      event.preventDefault();
       if (window.innerWidth <= 991) {
         this.isNavbarVisible = false;
       }
+
       const target = event.currentTarget.getAttribute('href');
-
-      this.$router.push({ hash: target });
-
       this.smoothScroll(target);
     },
     smoothScroll(target) {
@@ -107,10 +106,11 @@ h1 {
   transform: scaleX(1);
 }
 .nav-link.active {
-  color: #f8f9fa;
+  color: #fff; /* Make the active link white */
+  text-decoration: underline; /* Underline the active link */
 }
 .nav-link.active::after {
-  transform: scaleX(1);
+  transform: scaleX(1); /* Ensure underline appears when active */
   background-color: #f8f9fa;
 }
 @media (max-width: 991.98px) {

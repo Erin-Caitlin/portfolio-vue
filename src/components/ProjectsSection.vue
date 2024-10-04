@@ -6,7 +6,7 @@
     <div class="project-grid" v-if="projects.length">
       <div class="project-card" v-for="project in projects" :key="project.id">
         <div class="project-image-container">
-          <img :src="project.imgUrl" :alt="project.project" class="project-image" />
+          <img :src="project.imgUrl" :alt="project.project" class="project-image" loading="lazy"/>
           <div class="overlay">
             <div class="overlay-content">
               <h6 class="project-title">{{ project.project }}</h6>
@@ -41,8 +41,16 @@ export default {
 }
 </script>
 
-
 <style scoped>
+.section-title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #532823;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .container {
   padding: 3rem;
 }
@@ -73,6 +81,7 @@ export default {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: top;
 }
 
 .overlay {

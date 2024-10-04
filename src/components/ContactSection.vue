@@ -3,22 +3,19 @@
     <h2 class="display-2 section-title animate__animated animate__fadeIn">Contact</h2>
     <div class="contact-content d-flex flex-column flex-md-row align-items-center justify-content-center p-4 rounded shadow">
       <div class="contact-form me-md-4 mb-4 mb-md-0 col-12 col-md-6">
-        <form action="https://formspree.io/f/mkgwnjva" method="POST">
-          <div class="form-group mb-3">
+        <form action="https://formspree.io/f/mdknrngb" method="POST">
+          <div class="form-group mb-3 d-flex gap-2">
             <label class="form-label text-white" for="name"></label>
-            <input type="text" name="name" placeholder="First Name" id="name" class="form-control border-bottom">
-          </div>
-          <div class="form-group mb-3">
-            <label class="form-label text-white" for="lastname"></label>
-            <input type="text" name="lastname" placeholder="Last Name" id="lastname" class="form-control border-bottom">
+            <input type="text" name="name" placeholder="First Name" id="name" class="form-control border-bottom" required>
+            <input type="text" name="lastname" placeholder="Last Name" id="lastname" class="form-control border-bottom" required>
           </div>
           <div class="form-group mb-3">
             <label class="form-label text-white" for="email"></label>
-            <input type="email" name="email" placeholder="Email@gmail.com" id="email" class="form-control border-bottom">
+            <input type="email" name="email" placeholder="Email@gmail.com" id="email" class="form-control border-bottom" required>
           </div>
           <div class="form-group mb-4">
             <label class="form-label text-white" for="message"></label>
-            <textarea name="message" placeholder="Type your message..." id="message" class="form-control border-bottom" rows="5"></textarea>
+            <textarea name="message" placeholder="Type your message..." id="message" class="form-control border-bottom" rows="5" required></textarea>
           </div>
           <div class="d-flex justify-content-center">
             <button type="submit" id="btn-send" class="btn btn-dark me-2">Send</button>
@@ -144,5 +141,14 @@ i {
   .contact-details i {
     font-size: 1.25rem; 
   }
+}
+
+.section-title {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #532823;
+  text-transform: uppercase;
+  text-align: center;
 }
 </style>
