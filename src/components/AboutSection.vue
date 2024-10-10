@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <h2 class="display-2 section-title animate__animated animate__fadeIn">About</h2>
-    <div id="info">
+    <h2 class="display-2 section-title animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="1000">About</h2>
+    <div id="info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
       <div>
         <p class="lead">Here's a bit of background about myself: I graduated from Mondale High School in 2022, where I was first introduced to basic web development in Computer's Applications Technology. I received 99% in my last year of high school for our yearly Practical Assesment Task that included word documents, excel, database and designing an HTML website. Since then, my passion has driven me to pursue a career in software development.</p>
         <p class="lead">Over the past year, I've obtained a certificate for completing a 3-day photography course through RAD (Rise Above Development) and worked as a Customer Advisor at Sigma Connected (23rd March 2023 - 1st April 2024). In my time working at Sigma Connected, I was able to develop communication and interpersonal skills, along with the ability to work alone and various teams. As a driven and honest individual, I always strive to excel in any task that comes my way.</p>
@@ -10,51 +10,52 @@
       </div>
     </div>
 
-    <h2 class="display-2 section-title animate__animated animate__fadeIn">Skills</h2>
+    <!-- Skills Section -->
+    <h2 class="display-2 section-title animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Skills</h2>
     <div class="row gap-4 justify-content-center">
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="icon-container">
           <box-icon type='logo' name="html5" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">HTML</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <div class="icon-container">
           <box-icon type='logo' name="css3" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">CSS</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <div class="icon-container">
           <box-icon type='logo' name="bootstrap" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Bootstrap</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
         <div class="icon-container">
           <box-icon type='logo' name="javascript" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Javascript</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
         <div class="icon-container">
           <box-icon type='logo' name="vuejs" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Vue.JS</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
         <div class="icon-container">
           <box-icon type='logo' name="nodejs" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Node.js</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
         <div class="icon-container">
           <img src="https://erin-caitlin.github.io/all-images/VuePortfolio/programing.png" class="skill-icon">
           <h4 class="card-title">MySQL</h4>
         </div>
       </div>
-      <div class="skill-item">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <div class="icon-container">
           <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Firebase</h4>
@@ -63,6 +64,58 @@
     </div>
   </div>
 </template>
+
+<script>
+import AOS from 'aos'; // Ensure AOS is imported
+
+export default {
+  data() {
+    return {
+      isNavbarVisible: false,
+    };
+  },
+  mounted() {
+    AOS.init();
+  },
+  methods: {
+    toggleNavbar() {
+      this.isNavbarVisible = !this.isNavbarVisible;
+    },
+    handleLinkClick(event) {
+      event.preventDefault();
+      if (window.innerWidth <= 991) {
+        this.isNavbarVisible = false;
+      }
+
+      const target = event.currentTarget.getAttribute('href');
+      this.smoothScroll(target);
+    },
+    smoothScroll(target) {
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    handleResize() {
+      if (window.innerWidth > 991) {
+        this.isNavbarVisible = false;
+      }
+    },
+    handleScroll() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 40) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    },
+  },
+  beforeUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('resize', this.handleResize);
+  },
+};
+</script>
 
 <style scoped>
 .container {
@@ -102,7 +155,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px; /* Corrected gap between skill items */
+  gap: 40px;
 }
 
 .skill-item {
@@ -124,9 +177,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Full width of the skill item */
-  height: 100%; /* Full height of the skill item */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-icon {
@@ -161,8 +214,8 @@
   }
 
   .skill-item {
-    width: 180px; /* Slightly smaller on mobile */
-    height: 180px; /* Keep it square */
+    width: 180px;
+    height: 180px;
   }
 
   .skill-icon {
@@ -177,8 +230,8 @@
 
 @media (max-width: 480px) {
   .skill-item {
-    width: 160px; /* Even smaller on very small screens */
-    height: 160px; /* Keep it square */
+    width: 160px;
+    height: 160px;
   }
 }
 </style>

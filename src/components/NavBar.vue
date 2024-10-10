@@ -43,7 +43,10 @@ export default {
     smoothScroll(target) {
       const element = document.querySelector(target);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        window.scrollTo({
+          top: element.offsetTop - 50, // Adjust offset for header
+          behavior: 'smooth',
+        });
       }
     },
     handleResize() {
@@ -77,7 +80,7 @@ h1 {
 }
 .navbar {
   position: fixed;
-  top: 0px;
+  top: 0;
   width: 100%;
 }
 
@@ -87,9 +90,11 @@ h1 {
   color: #fff;
   text-decoration: none;
 }
+
 .nav-link:hover {
   color: #f8f9fa;
 }
+
 .nav-link::after {
   content: '';
   display: block;
@@ -102,17 +107,21 @@ h1 {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
+
 .nav-link:hover::after {
   transform: scaleX(1);
 }
+
 .nav-link.active {
-  color: #fff; /* Make the active link white */
-  text-decoration: underline; /* Underline the active link */
+  color: #fff;
+  text-decoration: underline;
 }
+
 .nav-link.active::after {
-  transform: scaleX(1); /* Ensure underline appears when active */
+  transform: scaleX(1);
   background-color: #f8f9fa;
 }
+
 @media (max-width: 991.98px) {
   .navbar-collapse {
     position: fixed;
@@ -124,10 +133,12 @@ h1 {
     transition: left 0.3s ease;
     z-index: 1050;
   }
+
   .navbar-collapse.show {
     left: 0;
   }
 }
+
 .navbar-toggler {
   border: none;
   background-color: white;
