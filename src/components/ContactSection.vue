@@ -1,6 +1,6 @@
 <template>
   <div class="container" id="contact-page">
-    <h2 class="display-2 section-title animate__animated animate__fadeIn">Contact</h2>
+    <h2 class="display-2 section-title" data-aos="fade-in">Contact</h2>
     <div class="contact-content d-flex flex-column flex-md-row align-items-center justify-content-center p-4 rounded shadow">
       <div class="contact-form me-md-4 mb-4 mb-md-0 col-12 col-md-6">
         <form action="https://formspree.io/f/mdknrngb" method="POST">

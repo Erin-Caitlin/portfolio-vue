@@ -1,7 +1,9 @@
 <template>
   <div class="container">
-    <h2 class="display-2 section-title animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="1000">About</h2>
-    <div id="info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+    <h2 class="display-2 section-title" data-aos="fade-in">About</h2>
+    <!-- <h2 class="display-2 section-title animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="1000">About</h2> -->
+    <!-- <div id="info" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"> -->
+      <div id="info">
       <div>
         <p class="lead">Here's a bit of background about myself: I graduated from Mondale High School in 2022, where I was first introduced to basic web development in Computer's Applications Technology. I received 99% in my last year of high school for our yearly Practical Assesment Task that included word documents, excel, database and designing an HTML website. Since then, my passion has driven me to pursue a career in software development.</p>
         <p class="lead">Over the past year, I've obtained a certificate for completing a 3-day photography course through RAD (Rise Above Development) and worked as a Customer Advisor at Sigma Connected (23rd March 2023 - 1st April 2024). In my time working at Sigma Connected, I was able to develop communication and interpersonal skills, along with the ability to work alone and various teams. As a driven and honest individual, I always strive to excel in any task that comes my way.</p>
@@ -11,7 +13,10 @@
     </div>
 
     <!-- Skills Section -->
-    <h2 class="display-2 section-title animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Skills</h2>
+    <!-- <h2 class="display-2 section-title animate__animated animate__fadeIn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Skills</h2>
+    <div class="row gap-4 justify-content-center">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"> -->
+    <h2 class="display-2 section-title" data-aos="fade-in">Skills</h2>
     <div class="row gap-4 justify-content-center">
       <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="icon-container">

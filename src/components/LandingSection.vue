@@ -8,7 +8,7 @@
           <h1 class="display-1">Erin Caitlin Williams</h1>
           <h4 class="display-4">Aspiring Developer</h4>
           <div id="links">
-              <button class="btn"><a href="./AboutSection.vue">ABOUT ME</a></button>
+              <button class="btn"><a href="#about">ABOUT ME</a></button>
           </div>
       </div>
     </div>
