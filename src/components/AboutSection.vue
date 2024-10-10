@@ -71,7 +71,7 @@
 </template>
 
 <script>
-import AOS from 'aos'; // Ensure AOS is imported
+import AOS from 'aos';
 
 export default {
   data() {

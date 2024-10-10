@@ -3,12 +3,16 @@
       <div class="row">
         <h2 class="display-2 section-title" data-aos="fade-in">Education & Experiences</h2>
       </div>
-      <div class="row gap-3 justify-content-center" v-if="experiences?.length" data-aos="fade-up" data-aos-duration="2000">
-        <div class="education-card" v-for="experience in experiences" :key="experience.id" data-aos="zoom-in" data-aos-duration="1000">
+      <div class="row gap-3 justify-content-center" v-if="experiences?.length">
+      <!-- <div class="row gap-3 justify-content-center" v-if="experiences?.length" data-aos="fade-up" data-aos-duration="2000"> -->
+        <div class="education-card" v-for="experience in experiences" :key="experience.id">
+        <!-- <div class="education-card" v-for="experience in experiences" :key="experience.id" data-aos="zoom-in" data-aos-duration="1000"> -->
           <div class="education-image-container">
-            <img :src="experience.img_url" :alt="experience.company" loading="lazy" class="education-image" data-aos="flip-left" data-aos-duration="1500" />
+            <img :src="experience.img_url" :alt="experience.company" loading="lazy" class="education-image"/>
+            <!-- <img :src="experience.img_url" :alt="experience.company" loading="lazy" class="education-image" data-aos="flip-left" data-aos-duration="1500" /> -->
           </div>
-          <div class="education-text-container" data-aos="fade-right" data-aos-duration="1200">
+          <div class="education-text-container">
+          <!-- <div class="education-text-container" data-aos="fade-right" data-aos-duration="1200"> -->
             <h4 class="card-title">{{ experience.company }}</h4>
             <h5 class="lead">{{ experience.title }}</h5>
             <p class="lead">{{ experience.year }}</p>
@@ -22,7 +26,7 @@
   
   <script>
   import AOS from 'aos';
-  import 'aos/dist/aos.css'; // Import the AOS styles
+  import 'aos/dist/aos.css'; 
   import Spinner from '@/components/Spinner.vue';
   
   export default {
@@ -37,13 +41,12 @@
     mounted() {
       this.$store.dispatch('fetchExperiences');
       AOS.init({
-        duration: 1200,  // Global duration for animations
-        easing: 'ease-in-out',  // Smooth easing for transitions
-        once: true,  // Animation happens only once
+        duration: 1200,
+        easing: 'ease-in-out',
       });
     },
     updated() {
-      AOS.refresh();  // Refresh AOS when component updates
+      AOS.refresh();
     }
   }
   </script>
