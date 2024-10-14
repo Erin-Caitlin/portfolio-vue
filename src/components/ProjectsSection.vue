@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style scoped>
+/* Universal Section Title Styling */
 .section-title {
   margin-bottom: 2rem;
   font-weight: bold;
@@ -51,16 +52,19 @@ export default {
   text-align: center;
 }
 
+/* Container Padding */
 .container {
   padding: 3rem;
 }
 
+/* Grid Layout for Projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
   grid-gap: 20px;
 }
 
+/* Project Card Styling */
 .project-card {
   position: relative;
   border-radius: 8px;
@@ -73,13 +77,14 @@ export default {
   transform: scale(1.05);
 }
 
+/* Image Container and Overlay */
 .project-image-container {
   position: relative;
 }
 
 .project-image {
   width: 100%;
-  height: 200px;
+  height: 200px; /* Keep height same for desktop */
   object-fit: cover;
   object-position: top;
 }
@@ -131,4 +136,35 @@ export default {
   margin: 10px 0;
   font-weight: bold;
 }
+
+/* Responsive Styles */
+
+/* For medium devices (up to 992px) */
+@media (max-width: 992px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+
+  .project-image {
+    height: 200px; /* Same height for tablets */
+  }
+}
+
+/* For small devices (up to 576px) */
+@media (max-width: 576px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    grid-gap: 15px;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  /* Adjusting the project image size for smaller screens */
+  .project-image {
+    height: 150px; /* Smaller height for mobile to display full image */
+  }
+}
+
 </style>

@@ -1,11 +1,10 @@
-/* Importing External Resources */
 /* Bootstrap Icons */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Quicksand:wght@300..700&display=swap');
 
 /* Universal Styles */
 *,
@@ -138,4 +137,39 @@ h2, h3, h4, h6 {
     color: #fff;
     padding: 15px 20px;
   }
+}
+
+/* Scrollbar*/
+body {
+    overflow-y: scroll; 
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: #532823c2; 
+    width: 0; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #532823b4; 
+    border-radius: 8px; 
+    border: none; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #c8a2c8;
+}
+
+/* Remove scrollbar arrows */
+::-webkit-scrollbar-button {
+    display: none; /* Hide the arrows */
+}
+
+/* Scrollbar styling for Firefox */
+body {
+    scrollbar-width: thin; 
+    scrollbar-color: #532823b4; 
 }
