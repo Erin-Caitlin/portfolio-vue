@@ -3,7 +3,7 @@
       <div class="container-fluid p-3 text-center">
         <hr/>
         <a href="https://github.com/Erin-Caitlin/AhavaLounge.git" target="_blank"><i class="bi bi-github icon"></i></a>
-        <a href="www.linkedin.com/in/erin-caitlin-williams-25356a320" target="_blank"><i class="bi bi-linkedin icon"></i></a>
+        <a href="https://www.linkedin.com/in/erin-caitlin-williams-25356a320" target="_blank"><i class="bi bi-linkedin icon"></i></a>
         <p>Erin Caitlin Williams &copy; {{ cYear }}</p>
       </div>
     </div>
