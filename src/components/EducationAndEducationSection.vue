@@ -74,7 +74,7 @@
     height: auto;
     align-items: flex-start;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: rgb(208, 188, 177);
+    /* background-color: rgb(208, 188, 177); */
     border-radius: 12px;
     padding: 8px;
     margin-bottom: 1rem;
@@ -113,7 +113,7 @@
   
   .lead {
     font-size: 0.95rem;
-    color: #666;
+    color: #000;
     text-align: left;
   }
   

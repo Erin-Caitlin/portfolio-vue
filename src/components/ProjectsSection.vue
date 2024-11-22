@@ -20,6 +20,25 @@
       </div>
     </div>
     <Spinner v-else />
+    <!-- Case Studies Section -->
+    <h2 class="display-2 section-title" data-aos="fade-in" case>Case Studies</h2>
+<div class="case-studies" data-aos="fade-up" data-aos-duration="1000">
+  <h3 class="case-studies-heading">Hackathons</h3>
+  
+  <div class="case-study-item">
+    <h4 class="case-study-title">UI/UX Design</h4>
+    <div class="case-study-buttons">
+      <a href="https://drive.google.com/file/d/1EMkgljrnJI0cIW17roOfadi5mkSd5SYG/view?usp=sharing" target="_blank" class="view-button">View</a>
+    </div>
+  </div>
+  
+  <div class="case-study-item">
+    <h4 class="case-study-title">SCRUM</h4>
+    <div class="case-study-buttons">
+      <a href="https://drive.google.com/file/d/1tNs3rqN3B2WDNf0Zahla3wU4DF9bGpcC/view?usp=sharing" target="_blank" class="view-button">View</a>
+    </div>
+  </div>
+</div>
   </div>
 </template>
 
@@ -137,6 +156,77 @@ export default {
   font-weight: bold;
 }
 
+/* Case Studies Section */
+.case-studies {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff2f;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust this value to make it smaller */
+  max-width: 600px; /* Optional: Set a max width for larger screens */
+  margin: 3rem auto; /* Center the element */
+}
+
+[case] {
+  padding-top: 3rem;
+}
+
+.case-studies-heading {
+  font-size: 2rem;
+  color: #532823;
+  margin-bottom: 1.5rem;
+}
+
+.case-study-item {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  background-color: #ffffff42;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.case-study-item:hover {
+  transform: translateY(-5px);
+}
+
+.case-study-title {
+  font-size: 1.5rem;
+  color: #532823;
+}
+
+.case-study-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.view-button,
+.download-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #532823;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove text decoration */
+}
+
+.view-button:hover,
+.download-button:hover {
+  background-color: #805040;
+}
+
 /* Responsive Styles */
 
 /* For medium devices (up to 992px) */
@@ -164,6 +254,17 @@ export default {
   /* Adjusting the project image size for smaller screens */
   .project-image {
     height: 150px; /* Smaller height for mobile to display full image */
+  }
+
+  .case-study-item {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .case-study-buttons {
+    width: 100%;
+    justify-content: space-evenly;
   }
 }
 
