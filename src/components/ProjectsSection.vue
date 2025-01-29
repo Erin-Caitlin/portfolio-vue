@@ -21,9 +21,9 @@
     </div>
     <Spinner v-else />
     <!-- Case Studies Section -->
-    <h2 class="display-2 section-title" data-aos="fade-in" case>Case Studies</h2>
+    <h2 class="display-2 section-title" data-aos="fade-in" case>LC Studios</h2>
 <div class="case-studies" data-aos="fade-up" data-aos-duration="1000">
-  <h3 class="case-studies-heading">Hackathons</h3>
+  <h3 class="case-studies-heading">Case Studies / Hackathons</h3>
   
   <div class="case-study-item">
     <h4 class="case-study-title">UI/UX Design</h4>
