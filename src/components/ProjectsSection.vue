@@ -39,6 +39,40 @@
     </div>
   </div>
 </div>
+<!-- <div class="case-studies" data-aos="fade-up" data-aos-duration="1000">
+  <h3 class="case-studies-heading">Badges</h3>
+  
+  <div class="case-study-item">
+    <h4 class="case-study-title">Networking</h4>
+    <div class="case-study-buttons">
+      <a href="https://drive.google.com/file/d/1EMkgljrnJI0cIW17roOfadi5mkSd5SYG/view?usp=sharing" target="_blank" class="view-button">View</a>
+    </div>
+  </div>
+  
+  <div class="case-study-item">
+    <h4 class="case-study-title">Web Development</h4>
+    <div class="case-study-buttons">
+      <a href="https://drive.google.com/file/d/1tNs3rqN3B2WDNf0Zahla3wU4DF9bGpcC/view?usp=sharing" target="_blank" class="view-button">View</a>
+    </div>
+  </div>
+</div> -->
+<!-- <div class="case-studies" data-aos="fade-up" data-aos-duration="1000">
+  <h3 class="case-studies-heading">Wordpress</h3>
+  
+  <div class="case-study-item">
+    <h4 class="case-study-title">Portfolio</h4>
+    <div class="case-study-buttons">
+      <a href="https://dev-erin-portfolio.pantheonsite.io/" target="_blank" class="view-button">View</a>
+    </div>
+  </div>
+  
+  <div class="case-study-item">
+    <h4 class="case-study-title">E-commerce</h4>
+    <div class="case-study-buttons">
+      <a href="https://dev-store-wp.pantheonsite.io/" target="_blank" class="view-button">View</a>
+    </div>
+  </div>
+</div> -->
   </div>
 </template>
 

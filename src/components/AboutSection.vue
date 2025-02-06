@@ -60,6 +60,30 @@
           <h4 class="card-title">Firebase</h4>
         </div>
       </div>
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="icon-container">
+          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Firebase</h4>
+        </div>
+      </div>
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="icon-container">
+          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Firebase</h4>
+        </div>
+      </div>
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="icon-container">
+          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Firebase</h4>
+        </div>
+      </div>
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="icon-container">
+          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Firebase</h4>
+        </div>
+      </div>
     </div>
   </div>
 </template>
