@@ -62,26 +62,26 @@
       </div>
       <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <div class="icon-container">
-          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
-          <h4 class="card-title">Firebase</h4>
+          <box-icon type='solid' name="palette" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Canva</h4>
         </div>
       </div>
       <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <div class="icon-container">
-          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
-          <h4 class="card-title">Firebase</h4>
+          <box-icon type='logo' name="figma" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Figma</h4>
         </div>
       </div>
       <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <div class="icon-container">
-          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
-          <h4 class="card-title">Firebase</h4>
+          <box-icon type='logo' name="github" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Github</h4>
         </div>
       </div>
       <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
         <div class="icon-container">
-          <box-icon type='logo' name="firebase" color="#532823b4" class="skill-icon"></box-icon>
-          <h4 class="card-title">Firebase</h4>
+          <box-icon type='logo' name="wordpress" color="#532823b4" class="skill-icon"></box-icon>
+          <h4 class="card-title">Wordpress</h4>
         </div>
       </div>
     </div>
