@@ -60,25 +60,25 @@
           <h4 class="card-title">Firebase</h4>
         </div>
       </div>
-      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1100">
         <div class="icon-container">
           <box-icon type='solid' name="palette" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Canva</h4>
         </div>
       </div>
-      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
         <div class="icon-container">
           <box-icon type='logo' name="figma" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Figma</h4>
         </div>
       </div>
-      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300">
         <div class="icon-container">
           <box-icon type='logo' name="github" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Github</h4>
         </div>
       </div>
-      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="skill-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1400">
         <div class="icon-container">
           <box-icon type='logo' name="wordpress" color="#532823b4" class="skill-icon"></box-icon>
           <h4 class="card-title">Wordpress</h4>
@@ -147,6 +147,7 @@ export default {
 }
 
 .section-title {
+  margin-top:1rem;
   margin-bottom: 2rem;
   font-weight: bold;
   font-size: 2.5rem;
